@@ -1,0 +1,115 @@
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials__item {
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__link {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  background-color: var(--primary-white-color);
+
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.socials__icon {
+  fill: #afb1b8;
+
+  transition-property: fill;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+
+  .socials__link:hover &,
+  .socials__link:focus & {
+    fill: var(--primary-white-color);
+  }
+}
+
+.join-group {
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
+}
+
+.join-group__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+
+  text-align: center;
+
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+}
+
+.join-group__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.join-group__item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.join-group__link {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.join-group__icom {
+  fill: var(--primary-white-color);
+}
+.join-group__link:hover .social-icom,
+.join-group__link:focus .social-icom {
+  fill: var(--primary-white-color);
+}
