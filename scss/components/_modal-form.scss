@@ -32,8 +32,7 @@
   background-color: var(--primary-white-color);
   border-radius: 4px;
 
-  transition: transform var(--duration) var(--timing-function)
-    /*, opacity var(--duration) var(--timing-function)*/;
+  transition: transform var(--duration) var(--timing-function);
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.4);
